@@ -1,0 +1,171 @@
+/*
+ Theme Name:   Evil Ant Theme
+ Theme URI:    https://github.com/mbasaglia/Evil-Ant-Theme
+ Description:  Theme for EAC
+ Author:       Mattia Basaglia
+ Author URI:   http://mattbas.org
+ Template:     twentythirteen
+ Version:      0.0.1
+ License:      GNU General Public License v3 or later
+ License URI:  http://www.gnu.org/licenses/gpl-3.0.html
+ Tags:         todo
+ Text Domain:  evil-ant-theme
+*/
+
+/* ===========================================================================
+ *                             Colors 
+ * ===========================================================================
+ */
+
+/* Contents */
+.entry-content a, .comment-content a {
+    color: #0a36bc;
+}
+
+/* Comments */
+.navbar, .comment-respond {
+	background-color: #e7f5f7;
+}
+
+button, input, textarea,
+.site-header .search-field, 
+.site-header .search-field:focus {
+	border: 2px solid #bad0d4;
+}
+
+/* Misc */
+.widget {
+    background-color: rgba(231, 245, 247, 0.7);
+}
+
+/* Navbar */
+
+.nav-menu .sub-menu, .nav-menu .children {
+    background-color: #254167;
+    border-radius: 0 5px 5px;
+}
+.nav-menu .children li:first-child a {
+	border-top: 1px solid #254167;
+}
+
+.main-navigation > .nav-menu > ul > .current_page_ancestor > a, 
+.main-navigation > .nav-menu > ul > .current_page_item > a
+{
+    background-color: #cdf;
+	color: black;
+    font-weight: bold;
+}
+
+.nav-menu li:hover > a, .nav-menu li a:hover, .nav-menu li:focus > a, .nav-menu li a:focus,
+ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-menu ul ul a:focus 
+{
+    background-color: #5082ce;
+	color: white;
+}
+
+
+.children .current_page_item > a, .children .current-menu-item > a, .children .current-menu-ancestor > a {
+    color: white;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+	background-color: #cee5e8;
+	color: #586768;
+}
+.footer a {
+	color: #586768;
+}
+
+
+
+/* ===========================================================================
+ *                             Layout 
+ * ===========================================================================
+ */
+
+/* Contents */
+.entry-header, .entry-content, .entry-summary, .entry-meta 
+{
+	margin: 0 auto;
+	max-width: none;
+	width: 100%;
+}
+
+.page {
+	margin: 0 24pt;
+}
+
+/* Comments */
+.comments-area {
+	border-top: 1px dashed #ededed;
+	padding: 0 32pt;
+	margin-bottom: 16pt;
+}
+.comments-title, .comment-list, .comment-reply-title, .must-log-in, 
+.comment-respond .comment-form, .comment-respond iframe {
+	max-width: none;
+}
+.comment-respond {
+	padding: 16pt 32pt;
+}
+.comment-reply-title {
+	margin-top: 0;
+}
+
+.comment-author.vcard {
+    max-width: 112px;
+}
+
+/* Navbar */
+.main-navigation {
+    max-width: none;
+}
+.nav-menu .sub-menu, .nav-menu .children {
+    border-radius: 0 5px 5px;
+}
+.nav-menu .sub-menu li:last-child a, .nav-menu .children li:last-child a {
+    border-radius: 0 0 5px 5px;
+}
+.nav-menu .sub-menu li:first-child a, .nav-menu .children li:first-child a {
+    border-radius: 0 5px 0 0;
+}
+
+
+/* Footer */
+.footer {
+	font-size: 11pt;
+	text-align: center;
+}
+.footer .widget {
+    background-color: transparent;
+    display: inline-block;
+    margin: 0;
+}
+.footer-widgets {
+    list-style: outside none none;
+    margin: 0;
+}
+
+
+/* Xonotic Stuff */
+.dptable_status th {
+	padding-right: 8pt;
+	white-space: nowrap;
+}
+.dptable_status {
+	display: inline-block;
+	vertical-align: middle;
+	width: 60%;
+}
+img.xonpress_screenshot {
+	margin-left: 5%;
+	max-height: 128pt;
+	max-width: 30%;
+	min-width: 128pt;
+	vertical-align: middle;
+}
+.dptable_status td {
+	width: 100%;
+}
