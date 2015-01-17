@@ -38,7 +38,7 @@ button, input, textarea,
     background-color: rgba(231, 245, 247, 0.7);
 }
 
-/* Navbar */
+/* Header */
 
 .nav-menu .sub-menu, .nav-menu .children {
     background-color: #254167;
@@ -118,7 +118,12 @@ ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-me
     max-width: 112px;
 }
 
-/* Navbar */
+/* Header */
+.site-header .home-link {
+    margin: 0 20pt;
+    width: 230px;
+}
+
 .main-navigation {
     max-width: none;
 }
