@@ -103,6 +103,7 @@ ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-me
 .mapinfo {
     border-top: 1px solid #c0c0c0;
     min-height: 128px;
+	min-width: 512px;
     overflow: hidden;
     padding-left: 16pt;
     position: relative;
