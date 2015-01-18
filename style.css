@@ -97,6 +97,36 @@ ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-me
 	margin: 0 24pt;
 }
 
+.mapinfo-title {
+    margin: 4pt 0;
+}
+.mapinfo {
+    border-top: 1px solid #c0c0c0;
+    min-height: 128px;
+    overflow: hidden;
+    padding-left: 16pt;
+    position: relative;
+}
+.mapinfo-author {
+    font-size: small;
+    font-style: italic;
+}
+.mapinfo-author-name {
+    font-style: normal;
+}
+img.mapinfo-screenshot {
+    max-width: 256px;
+    min-height: 128px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.mapinfo p {
+    margin: 1ex;
+    max-width: calc(100% - 256px - 2ex);
+}
+
+
 /* Comments */
 .comments-area {
 	border-top: 1px dashed #ededed;

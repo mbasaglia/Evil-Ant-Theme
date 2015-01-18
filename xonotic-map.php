@@ -15,4 +15,15 @@ global $mapinfo;
 ?>
 <p class='mapinfo-description'><?php echo $mapinfo->description;?></p>
 <p class='mapinfo-gametypes'>Supported gametypes: <?php echo implode(', ',$mapinfo->gametypes); ?></p>
+<?php
+	if ( !empty($mapinfo->download) || !empty($mapinfo->sources) )
+	{
+		$downloads = array();
+		if ( !empty($mapinfo->download) )
+			$downloads []= "<a href='{$mapinfo->download}'>Map</a>";
+		if ( !empty($mapinfo->sources) )
+			$downloads []= "<a href='{$mapinfo->sources}'>Sources</a>";
+		echo "<p class='mapinfo-download'>Download: ".implode(", ", $downloads)."</p>";
+	}
+?>
 </div>
