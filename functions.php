@@ -5,6 +5,7 @@ $content_width = null;
 
 add_action( 'wp_enqueue_scripts', 'eactheme_enqueue_scripts' );
 add_action( 'widgets_init', 'eactheme_widgets_init' );
+add_action( 'wp_head', 'eactheme_head' );
 
 function eactheme_enqueue_scripts()
 {
@@ -21,4 +22,10 @@ function eactheme_widgets_init()
 		'before_title'  => '<span class="footer-title">',
 		'after_title'   => '</span>',
 	));
+}
+
+function eactheme_head()
+{
+	echo '<link rel="icon" type="image/png" href="'.
+		get_stylesheet_directory_uri().'/img/eacon.png" />';
 }
