@@ -44,12 +44,13 @@ button, input, textarea,
     background-color: #254167;
     border-radius: 0 5px 5px;
 }
-.nav-menu .children li:first-child a {
+.nav-menu .sub-menu li:first-child a, .nav-menu .children li:first-child a 
+{
 	border-top: 1px solid #254167;
 }
 
-.main-navigation > .nav-menu > ul > .current_page_ancestor > a, 
-.main-navigation > .nav-menu > ul > .current_page_item > a
+:not(li) > ul.nav-menu > .current_page_ancestor > a, 
+:not(li) > ul.nav-menu > .current_page_item > a
 {
     background-color: #cdf;
 	color: black;
@@ -64,7 +65,9 @@ ul.nav-menu ul a:hover, .nav-menu ul ul a:hover, ul.nav-menu ul a:focus, .nav-me
 }
 
 
-.children .current_page_item > a, .children .current-menu-item > a, .children .current-menu-ancestor > a {
+.children .current_page_item > a, .children .current-menu-item > a, .children .current-menu-ancestor > a,
+.sub-menu .current-menu-item > a
+{
     color: white;
     font-weight: bold;
 }
@@ -125,6 +128,16 @@ img.mapinfo-screenshot {
 .mapinfo p {
     margin: 1ex;
     max-width: calc(100% - 256px - 2ex);
+}
+
+th {
+	text-transform: none;
+}
+table {
+    line-height: inherit;
+}
+html, button, input, select, textarea {
+    font-family: sans-serif;
 }
 
 
