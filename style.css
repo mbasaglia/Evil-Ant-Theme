@@ -199,6 +199,11 @@ html, button, input, select, textarea {
 
 
 /* Xonotic Stuff */
+@font-face {
+    font-family: "Xolonium";
+    src: url("fonts/xolonium.eot?#iefix") format("embedded-opentype"), url("fonts/xolonium.ttf") format("truetype"), url("fonts/xolonium.svg#xoloniumregular") format("svg");
+}
+
 .dptable_status th {
 	padding-right: 8pt;
 	white-space: nowrap;
@@ -217,4 +222,8 @@ img.xonpress_screenshot {
 }
 .dptable_status td {
 	width: 100%;
+}
+
+.dptable_player_name {
+	font-family: Xolonium, sans-serif;
 }
