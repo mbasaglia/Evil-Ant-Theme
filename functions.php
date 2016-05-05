@@ -41,7 +41,8 @@ function eactheme_filter_menu( $sorted_menu_items )
 	{
 		$page = WP_Post::get_instance($item->object_id);
 		if ( ($page && $page->post_status == 'private') ||
-			 ($item->menu_item_parent && $menuitem_is_private[$item->menu_item_parent]) )
+			 ($item->menu_item_parent && array_key_exists($item->menu_item_parent, $menuitem_is_private) && $menuitem_is_private[$item->menu_item_parent]) )
+			 //($item->menu_item_parent && $menuitem_is_private[$item->menu_item_parent]) )
 			$menuitem_is_private[$item->ID] = true;
 		else
 			$output []= $item;
